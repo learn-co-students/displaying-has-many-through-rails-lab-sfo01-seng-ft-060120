@@ -1,0 +1,7 @@
+<h3><%= "Patients" %></h3>
+
+<ul>
+<% @patients.each do |p| %>
+    <%= link_to "Name: #{p.name} Number of Appointments: #{p.appointments.count}", p %><br>
+<% end %>
+</ul>
